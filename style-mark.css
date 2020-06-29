@@ -1,0 +1,43 @@
+
+/* 8 steps styles */
+
+.pricing-column 
+{
+    background-color: white;
+    border: 1px solid #77ca15;
+    border-radius: 35px;
+    /* height: 100%; */
+    color: #ff6616;
+    padding: 1.6rem;
+    box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
+    transition: transform .7s ease;
+    overflow: hidden;
+    position: relative; /*-- Ribon --*/
+    /* background: url(./img/grass5.jpg); */
+}
+.pricing-column ul
+{
+    list-style-type: none;
+    color: #000;
+}
+.pricing-column ul li
+{
+    margin-top: 15px;
+}
+.pricing-column:hover 
+{
+    transform: scale(1.1);
+}
+.pricing-column h4 
+{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.marginb
+{
+    margin-bottom: 30px;
+}
+#eight-steps
+{
+    border-bottom:none;
+}

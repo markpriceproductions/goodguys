@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Website | FOR PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header id="header">
+        <a href="#home" class="logo"><img src="./img/gg2.JPG"></a>
+        <ul>
+            <li><a href="#home" onclick="toggle()">Home</a></li>
+            <li><a href="#about" onclick="toggle()">About Us</a></li>
+            <li><a href="#services" onclick="toggle()">Services</a></li>
+            <!-- mark's 8 step html -->
+            <li><a href="#contact" onclick="toggle()">Contact</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <!-- Banner -->
+
+    <section class="banner" id="home">
+        <img src="./img/gg2.JPG">
+        <div class="ban-text">
+            <h2>A beautiful lawn doesn't <br> happen by itself</h2>
+                <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Description -->
+
+    <section class="sec" id="pitch">
+        <div class="content">
+            <div class="mxw800p">
+                <h3 class="color-font">We provide lawn services for customers throughout Soutwest Tennesse and Northwest Mississippi.</h3>
+                <p>We specialize in fertilization and weed control as well as insect and disease control for your lawn's needs.</p>
+                
+                <!-- 8 step html page -->
+
+                <a href="index-mark.html#8-steps" target="_blank"><p class="8-step color-font">See Our 8 Step Program <img src="https://img.icons8.com/color/48/000000/chevron-right.png"/></a></p>
+                    
+            </div>
+        </div>
+    </section>    
+
+    <!-- About -->
+
+    <section class="sec" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3 class="color-font">About Us</h3>
+                <p class="heavy-p color-font">Good Guys Lawn Care is a locally owned business with over 30 years experience in the turf industry</p>     
+                
+                <p>Our goal is to make your yard the best looking one on the street.</p>
+                
+                <p>Customer service is our passion as we strive to be the very best in the business. Everyone is our #1 customer!</p>
+                
+                <p>Call us today and we will do our very best to meet and exceed your expectations.</p>   
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+
+    <section class="sec services" id="services">
+        <div class="content">
+            <div class="mxw800p">
+                <h3 class="color-font">What We Offer</h3>      
+            </div>
+            <div class="services">
+                <div class="box">
+                    <div class="iconBx">
+                        <img class="leaf" src="./img/leaf.JPG">
+                    </div>
+                    <div class="content">
+                        <h2 class="underline color-font">Lawn Services</h2>
+                        <ul>
+                            <li>Residential</li>
+                            <li>Commercial</li>
+                            <li>Weed Control</li>
+                            <li>Fertilization</li>
+                            <li>Lawn Insect Control</li>
+                            <li>Lawn Disease Control</li>
+                            <li>Aeration</li>
+                            <li>Flea & Tick Control</li>
+                            <li>Tree & Shrub Care</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+
+        <section class="sec contact" id="contact">
+            <div class="content">
+            <div class="mxw800p">
+                <h3 class="uppercase">Reach Out To Us</h3>
+            </div>
+            <div class="conactForm">
+                <form>
+                <div class="row100">
+                    <div class="inputBx50">
+                    <input type="text" name="" placeholder="Full Name">
+                    </div>
+                    <div class="inputBx50">
+                    <input type="text" name="" placeholder="Email Address">
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="inputBx100">
+                    <textarea placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="inputBx100">
+                    <input type="submit" value="Send" name="">
+                    </div>
+                </div>
+                </form>
+            </div>
+            <div class="info">
+                <p><a href="#">(901)605-2701</p>
+                <p><a href="#">info.goodguys@gmail.com</a></p>
+            </div>
+            <div class="sci">
+                <ul>
+                <li><a href="https://www.facebook.com/Good-Guys-Lawn-Care-107629720842005/" target="_blank"><i class="fa fa-facebook-f" style="font-size: 29.2px"></i></a></li>
+                <li><a href="https://www.instagram.com/goodguyslawn/" target="_blank"><i class="fa fa-instagram" style="font-size: 30px"></i></a></li>
+                </ul>
+            </div>
+            
+            <div>                
+                <p class="copyright">website by: <br><a href="#" target="blank">LBB</a></p>
+            </div>
+        </section>
+        
+    <!-- JavaScript -->
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        function toggle(){
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+
+    </script>
+
+</body>
+</html>
